@@ -34,7 +34,7 @@ public class TestLogin implements ITest {
     public Object[][] getUserAccountData() {
         return new Object[][] {
                 {"密码错误", "admin", "pass1", "login" },
-                {"账号过期", "tester", "pass", "login2"},
+                {"账号过期", "tester", "pass", "login"},
         };
     }
 
@@ -57,18 +57,4 @@ public class TestLogin implements ITest {
 
         ctx.setAttribute("testName", this.myTestName);
     }
-
-//    @AfterMethod(alwaysRun = true)
-//    public void setResultTestName(ITestResult result) {
-//        log.warn("=== " + this.myTestName);
-//
-//        try {
-//            BaseTestMethod baseTestMethod = (BaseTestMethod) result.getMethod();
-//            Field f = baseTestMethod.getClass().getSuperclass().getDeclaredField("m_methodName");
-//            f.setAccessible(true);
-//            f.set(baseTestMethod, this.myTestName);
-//        } catch (Exception e) {
-//            Reporter.log("Exception : " + e.getMessage());
-//        }
-//    }
 }
