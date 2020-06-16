@@ -1,0 +1,17 @@
+2020-03-31 09:56:47 Found [36m3[0m scripts:
+(1/3) Pass [TestLogin] [1. 登录成功] (0.004s)
+(2/3) Pass [TestLogin] [2. 密码错误] (0.000s)
+(3/3) Fail [TestLogin] [3. 账号过期] (0.002s)
+
+Failed Scripts:
+[TestLogin] 3.账号过期
+   java.lang.AssertionError - java.lang.AssertionError: expected [login2] but found [login]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at TestLogin.loginFail(TestLogin.java:30)
+
+
+2020-03-31 09:56:47 Run 3 scripts in 3 secs, 2(66.0%) Pass, 1(33.0%) Fail, 0(0.0%) Skip. Report /Users/aaron/devops/project/ci_test_testng/log/001/result.txt
