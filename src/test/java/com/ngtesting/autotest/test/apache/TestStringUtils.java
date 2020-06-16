@@ -12,11 +12,11 @@ import org.testng.log4testng.Logger;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
 
-@Test(testName = "Test String Utils")
+@Test(testName = "Test StringUtils")
 public class TestStringUtils implements ITest {
     private static final Logger log = Logger.getLogger(TestStringUtils.class);
 
-    @Test(priority=1, testName = "space related function")
+    @Test(priority=1, testName = "StringUtils space related functions")
     public void test1() {
         String str = " abc 123 ";
 
@@ -27,7 +27,7 @@ public class TestStringUtils implements ITest {
         Assert.assertTrue(StringUtils.isBlank("   "));
     }
 
-    @Test(priority=1, testName = "letter related function")
+    @Test(priority=1, testName = "StringUtils letter related functions")
     public void test2() {
         String str = "abc";
 

@@ -13,21 +13,19 @@ import org.testng.log4testng.Logger;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
 
-@Test(testName = "登录测试")
+@Test(testName = "Test NumberUtils")
 public class TestNumbUtils implements ITest {
     private static final Logger log = Logger.getLogger(TestNumbUtils.class);
 
-    @Test(priority=1, testName = "convert related function")
+    @Test(priority=1, testName = "NumberUtils convert related functions")
     public void test1() {
         String str = "123";
 
         Assert.assertTrue(NumberUtils.isDigits("123"));
         Assert.assertTrue(NumberUtils.toInt("123") == 123);
-
-
     }
 
-    @Test(priority=1, testName = "compare related function")
+    @Test(priority=1, testName = "NumberUtils compare related functions")
     public void test2() {
         Assert.assertEquals( NumberUtils.max(1, 2, 123), 123);
     }
