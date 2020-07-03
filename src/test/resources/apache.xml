@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Test Apache Commons Language Lib">
+<suite name="Apache Commons Language Lib">
     <test name="String Utils">
         <classes>
             <class name="com.ngtesting.autotest.test.apache.TestStringUtils" />

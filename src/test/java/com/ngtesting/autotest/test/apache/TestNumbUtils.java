@@ -17,7 +17,7 @@ import java.lang.reflect.Method;
 public class TestNumbUtils implements ITest {
     private static final Logger log = Logger.getLogger(TestNumbUtils.class);
 
-    @Test(priority=1, testName = "NumberUtils convert related functions")
+    @Test(priority=1, testName = "Convert")
     public void test1() {
         String str = "123";
 
@@ -25,7 +25,7 @@ public class TestNumbUtils implements ITest {
         Assert.assertTrue(NumberUtils.toInt("123") == 123);
     }
 
-    @Test(priority=1, testName = "NumberUtils compare related functions")
+    @Test(priority=1, testName = "Compare")
     public void test2() {
         Assert.assertEquals( NumberUtils.max(1, 2, 123), 123);
     }

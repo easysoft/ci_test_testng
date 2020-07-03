@@ -16,7 +16,7 @@ import java.lang.reflect.Method;
 public class TestStringUtils implements ITest {
     private static final Logger log = Logger.getLogger(TestStringUtils.class);
 
-    @Test(priority=1, testName = "StringUtils space related functions")
+    @Test(priority=1, testName = "Space")
     public void test1() {
         String str = " abc 123 ";
 
@@ -27,7 +27,7 @@ public class TestStringUtils implements ITest {
         Assert.assertTrue(StringUtils.isBlank("   "));
     }
 
-    @Test(priority=1, testName = "StringUtils letter related functions")
+    @Test(priority=1, testName = "Letter")
     public void test2() {
         String str = "abc";
 
