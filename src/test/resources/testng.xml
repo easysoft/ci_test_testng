@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="用户账号测试套件" preserve-order="true">
-    <test name="登录测试" preserve-order="true">
+<suite name="用户账号测试套件">
+    <test name="登录测试">
         <classes>
             <class name="com.ngtesting.autotest.test.login.TestLogin" />
         </classes>

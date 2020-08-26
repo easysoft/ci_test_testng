@@ -1,9 +1,7 @@
 package com.ngtesting.autotest.test.login;
 
 import org.testng.*;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import org.testng.log4testng.Logger;
 
 import java.lang.annotation.Annotation;
@@ -35,8 +33,10 @@ public class TestLogin implements ITest {
         };
     }
 
+    @Override
     public String getTestName() {
-        return this.myTestName;
+        String name = testName.get();
+        return name;
     }
 
     @BeforeMethod(alwaysRun = true)
@@ -52,6 +52,8 @@ public class TestLogin implements ITest {
             }
         }
 
-        ctx.setAttribute("testName", this.myTestName);
+        testName.set(this.myTestName);
     }
+
+    private ThreadLocal<String> testName = new ThreadLocal<>();
 }

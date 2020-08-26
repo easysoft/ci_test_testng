@@ -1,1 +1,3 @@
+mvn clean package test -Dtestng.suite=target/classes/testng.xml
+
 mvn clean package test -Dtestng.suite=target/classes/apache.xml
