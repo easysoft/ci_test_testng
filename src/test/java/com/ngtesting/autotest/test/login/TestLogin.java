@@ -15,6 +15,11 @@ public class TestLogin implements ITest {
 
     @Test(priority=1, testName = "登录成功")
     public void loginSuccess() {
+        try {
+            Thread.sleep(1000);
+        } catch (Exception ex) {
+        }
+
         String title = "homepage";
         Assert.assertEquals(title , "homepage");
     }
