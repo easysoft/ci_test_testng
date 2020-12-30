@@ -59,4 +59,19 @@
 
   <repositories>
   </repositories>
+
+  <distributionManagement>
+    <snapshotRepository>
+      <id>artifactory</id>
+      <name>artifactory</name>
+      <url>http://192.168.0.56:58082/artifactory/local</url>
+    </snapshotRepository>
+
+    <repository>
+      <id>artifactory</id>
+      <name>artifactory</name>
+      <url>http://192.168.0.56:58082/artifactory/local</url>
+    </repository>
+  </distributionManagement>
+
 </project>
