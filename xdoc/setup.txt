@@ -2,7 +2,7 @@ mvn clean package test -Dtestng.suite=target/classes/testng.xml
 
 mvn clean package test -Dtestng.suite=target/classes/apache.xml
 
-mvn sonar:sonar \
+mvn clean compile sonar:sonar \
   -Dsonar.projectKey=ci_test_testng \
   -Dsonar.scm.provider=git \
   -Dsonar.host.url=http://t.ztesting.net:59001 \
