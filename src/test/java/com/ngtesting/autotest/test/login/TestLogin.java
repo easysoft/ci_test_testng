@@ -20,7 +20,7 @@ public class TestLogin implements ITest {
         } catch (Exception ex) {
         }
 
-        String title = "homepage";
+        String title = "homepage1";
         Assert.assertEquals(title , "homepage");
     }
 
