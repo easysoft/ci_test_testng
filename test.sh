@@ -1,4 +1,4 @@
-for (( i = 1; i <= 100; i++ ))
+for i in `seq 1000000`
   do echo "$i";
   sleep 1;
 done;
